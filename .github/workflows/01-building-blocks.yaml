@@ -1,0 +1,17 @@
+name: first workflow
+
+on: workflow_dispatch
+
+jobs:
+  echo-hello: 
+    runs-on: [default]
+    steps:
+      - name: Say hello
+        run: echo "heelo Lumesh"
+  echo-Welcome:
+     runs-on: [default]
+     steps:
+       - name: Welcome message
+         run: echo "Welcome to the GitHub Actions workflow!"   
+    
+
