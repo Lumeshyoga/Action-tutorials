@@ -4,12 +4,12 @@ on: workflow_dispatch
 
 jobs:
   echo-hello: 
-    runs-on: [default]
+    runs-on: ubuntu-latest
     steps:
       - name: Say hello
         run: echo "heelo Lumesh"
   echo-Welcome:
-     runs-on: [default]
+     runs-on: ubuntu-latest
      steps:
        - name: Welcome message
          run: echo "Welcome to the GitHub Actions workflow!"   
