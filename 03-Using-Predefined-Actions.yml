@@ -1,0 +1,17 @@
+name: Predeined-Actions
+
+input:
+  environment:
+    Options:
+      -dev
+      -siv
+  required: true
+on: workflow_dispatch
+
+jobs:
+  
+  checkingjob:
+    runs-on: [default]
+    steps:
+      - name: Check Environment
+        run: echo "The environment is ${{ inputs.environment }}"
