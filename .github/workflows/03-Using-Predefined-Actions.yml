@@ -19,3 +19,9 @@ jobs:
     steps:
       - name: Check Environment
         run: echo "The environment is ${{ github.event.inputs.environment }}"
+      - name: checkout
+        uses: actions/checkout@v4
+      - name: Display directories
+        run: ls -la  
+      
+
