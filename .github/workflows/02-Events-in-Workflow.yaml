@@ -4,7 +4,7 @@ on: workflow_dispatch
 jobs:
   DisplayingEventname:
      name: Disp Event Name
-     runs-on: ubuntu-latest
+     runs-on: [default]
      steps:
          - name: display event name
            run: echo "Event name is ${{github.event_name}} event"
