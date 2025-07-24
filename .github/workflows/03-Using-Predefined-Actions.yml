@@ -1,0 +1,21 @@
+name: PredefinedActions
+
+
+on:
+  workflow_dispatch:
+    inputs:
+      environment:
+        description: 'Select environment'
+        required: true
+        default: dev
+        type: choice
+        options:
+          - dev
+          - sit
+
+jobs:
+  checkingjob:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check Environment
+        run: echo "The environment is ${{ github.event.inputs.environment }}"
